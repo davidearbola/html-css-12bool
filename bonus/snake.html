@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../12bool.css">
+    <link rel="stylesheet" href="snake.css">
+    <title>Snake</title>
+</head>
+<body>
+    <div id="title" class="container-700">
+        <div class="row">
+            <!-- LETTERA B  -->
+            <div class="col-lg-1">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-red"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-green"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-violet"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-orange"></div>
+                    </div>
+                    <div class="col-lg-2 col-lg-offset-4">
+                        <div class="word-b box-blue"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-red"></div>
+                    </div>
+                    <div class="col-lg-2 col-lg-offset-4">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-red"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-green"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-violet"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-orange"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-blue"></div>
+                    </div>
+                    <div class="col-lg-2 col-lg-offset-6">
+                        <div class="word-b box-red"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                    <div class="col-lg-2 col-lg-offset-6">
+                        <div class="word-b box-green"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-violet"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-orange"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-blue"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-red"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- LETTERA O  -->
+            <div class="col-lg-1">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-red"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-green"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-violet"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-orange"></div>
+                    </div>
+                    <div class="col-lg-2 col-lg-offset-4">
+                        <div class="word-b box-blue"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-red"></div>
+                    </div>
+                    <div class="col-lg-2 col-lg-offset-4">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-green"></div>
+                    </div>
+                    <div class="col-lg-2 col-lg-offset-4">
+                        <div class="word-b box-violet"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-orange"></div>
+                    </div>
+                    <div class="col-lg-2 col-lg-offset-4">
+                        <div class="word-b box-blue"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-red"></div>
+                    </div>
+                    <div class="col-lg-2 col-lg-offset-4">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-green"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-violet"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-orange"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-blue"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- LETTERA O  -->
+            <div class="col-lg-1">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-red"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-green"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-violet"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-orange"></div>
+                    </div>
+                    <div class="col-lg-2 col-lg-offset-4">
+                        <div class="word-b box-blue"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-red"></div>
+                    </div>
+                    <div class="col-lg-2 col-lg-offset-4">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-green"></div>
+                    </div>
+                    <div class="col-lg-2 col-lg-offset-4">
+                        <div class="word-b box-violet"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-orange"></div>
+                    </div>
+                    <div class="col-lg-2 col-lg-offset-4">
+                        <div class="word-b box-blue"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-red"></div>
+                    </div>
+                    <div class="col-lg-2 col-lg-offset-4">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-green"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-violet"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-orange"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-blue"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- LETTERA L  -->
+            <div class="col-lg-1">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-red"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-green"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-violet"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-orange"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-blue"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-red"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-green"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-violet"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- LETTERA E  -->
+            <div class="col-lg-1">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-red"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-green"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-violet"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-orange"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-blue"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-red"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-green"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-violet"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-orange"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-blue"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-red"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-green"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-violet"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- LETTERA A  -->
+            <div class="col-lg-1">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-red"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-green"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-violet"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-orange"></div>
+                    </div>
+                    <div class="col-lg-2 col-lg-offset-4">
+                        <div class="word-b box-blue"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-red"></div>
+                    </div>
+                    <div class="col-lg-2 col-lg-offset-4">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-green"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-violet"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-orange"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-blue"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-red"></div>
+                    </div>
+                    <div class="col-lg-2 col-lg-offset-4">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-green"></div>
+                    </div>
+                    <div class="col-lg-2 col-lg-offset-4">
+                        <div class="word-b box-violet"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-orange"></div>
+                    </div>
+                    <div class="col-lg-2 col-lg-offset-4">
+                        <div class="word-b box-blue"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- LETTERA N  -->
+            <div class="col-lg-1">
+                <div class="row">
+                    <div class="col-lg-1">
+                        <div class="word-b box-red"></div>
+                    </div>
+                    <div class="col-lg-1">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                    <div class="col-lg-1 col-lg-offset-6">
+                        <div class="word-b box-green"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                    <div class="col-lg-1 col-lg-offset-1">
+                        <div class="word-b box-violet"></div>
+                    </div>
+                    <div class="col-lg-1 col-lg-offset-5">
+                        <div class="word-b box-green"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1">
+                        <div class="word-b box-green"></div>
+                    </div>
+                    <div class="col-lg-1 col-lg-offset-2">
+                        <div class="word-b box-orange"></div>
+                    </div>
+                    <div class="col-lg-1 col-lg-offset-4">
+                        <div class="word-b box-blue"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1">
+                        <div class="word-b box-violet"></div>
+                    </div>
+                    <div class="col-lg-1 col-lg-offset-3">
+                        <div class="word-b box-green"></div>
+                    </div>
+                    <div class="col-lg-1 col-lg-offset-3">
+                        <div class="word-b box-red"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1">
+                        <div class="word-b box-orange"></div>
+                    </div>
+                    <div class="col-lg-1 col-lg-offset-4">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                    <div class="col-lg-1 col-lg-offset-2">
+                        <div class="word-b box-green"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1">
+                        <div class="word-b box-blue"></div>
+                    </div>
+                    <div class="col-lg-1 col-lg-offset-5">
+                        <div class="word-b box-orange"></div>
+                    </div>
+                    <div class="col-lg-1 col-lg-offset-1">
+                        <div class="word-b box-violet"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1">
+                        <div class="word-b box-red"></div>
+                    </div>
+                    <div class="col-lg-1 col-lg-offset-6">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                    <div class="col-lg-1">
+                        <div class="word-b box-green"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- LETTERA S  -->
+            <div class="col-lg-1">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-red"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-green"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-violet"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-orange"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-blue"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-red"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-green"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-violet"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2 col-lg-offset-6">
+                        <div class="word-b box-orange"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2 col-lg-offset-6">
+                        <div class="word-b box-blue"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-red"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-green"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-violet"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- LETTERA N  -->
+            <div class="col-lg-1">
+                <div class="row">
+                    <div class="col-lg-1">
+                        <div class="word-b box-red"></div>
+                    </div>
+                    <div class="col-lg-1">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                    <div class="col-lg-1 col-lg-offset-6">
+                        <div class="word-b box-green"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                    <div class="col-lg-1 col-lg-offset-1">
+                        <div class="word-b box-violet"></div>
+                    </div>
+                    <div class="col-lg-1 col-lg-offset-5">
+                        <div class="word-b box-green"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1">
+                        <div class="word-b box-green"></div>
+                    </div>
+                    <div class="col-lg-1 col-lg-offset-2">
+                        <div class="word-b box-orange"></div>
+                    </div>
+                    <div class="col-lg-1 col-lg-offset-4">
+                        <div class="word-b box-blue"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1">
+                        <div class="word-b box-violet"></div>
+                    </div>
+                    <div class="col-lg-1 col-lg-offset-3">
+                        <div class="word-b box-green"></div>
+                    </div>
+                    <div class="col-lg-1 col-lg-offset-3">
+                        <div class="word-b box-red"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1">
+                        <div class="word-b box-orange"></div>
+                    </div>
+                    <div class="col-lg-1 col-lg-offset-4">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                    <div class="col-lg-1 col-lg-offset-2">
+                        <div class="word-b box-green"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1">
+                        <div class="word-b box-blue"></div>
+                    </div>
+                    <div class="col-lg-1 col-lg-offset-5">
+                        <div class="word-b box-orange"></div>
+                    </div>
+                    <div class="col-lg-1 col-lg-offset-1">
+                        <div class="word-b box-violet"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1">
+                        <div class="word-b box-red"></div>
+                    </div>
+                    <div class="col-lg-1 col-lg-offset-6">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                    <div class="col-lg-1">
+                        <div class="word-b box-green"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- LETTERA A  -->
+            <div class="col-lg-1">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-red"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-green"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-violet"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-orange"></div>
+                    </div>
+                    <div class="col-lg-2 col-lg-offset-4">
+                        <div class="word-b box-blue"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-red"></div>
+                    </div>
+                    <div class="col-lg-2 col-lg-offset-4">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-green"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-violet"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-orange"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-blue"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-red"></div>
+                    </div>
+                    <div class="col-lg-2 col-lg-offset-4">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-green"></div>
+                    </div>
+                    <div class="col-lg-2 col-lg-offset-4">
+                        <div class="word-b box-violet"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-orange"></div>
+                    </div>
+                    <div class="col-lg-2 col-lg-offset-4">
+                        <div class="word-b box-blue"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- LETTERA K  -->
+            <div class="col-lg-1">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-red"></div>
+                    </div>
+                    <div class="col-lg-2 col-lg-offset-4">
+                        <div class="word-b box-green"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                    <div class="col-lg-2 col-lg-offset-2">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-green"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-red"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-violet"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-orange"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-violet"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-blue"></div>
+                    </div>
+                    <div class="col-lg-2 col-lg-offset-2">
+                        <div class="word-b box-orange"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-red"></div>
+                    </div>
+                    <div class="col-lg-2 col-lg-offset-4">
+                        <div class="word-b box-blue"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- LETTERA E  -->
+            <div class="col-lg-1">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-red"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-green"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-violet"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-orange"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-blue"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-red"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-green"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-violet"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-orange"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-blue"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="word-b box-red"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-yellow"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-green"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="word-b box-violet"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-600">
+        <div class="row between-lg middle-lg">
+            <span class="score">SCORE: 1259</span>
+            <span class="life">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-heart"></i>
+            </span>
+        </div>
+        <div id="game">
+            <div class="row">
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game apple col-lg-1 box-light-brown">
+                    <i class="fa-solid fa-apple-whole fa-beat"></i>
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown relative">
+                    <div class="box-snake-head-top relative">
+                        <div class="box-snake-eye-top"></div>
+                    </div>
+                    <div class="box-snake-head-bottom relative">
+                        <div class="box-snake-eye-bottom"></div>
+                    </div>
+                    <div class="box-snake-tongue-top"></div>
+                    <div class="box-snake-tongue-bottom"></div>
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                    <div class="box-snake-x"></div>
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                    <div class="box-snake-x"></div>
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                    <div class="box-snake-x"></div>
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                    <div class="box-snake-border-top-right"></div>
+                    <div class="box-snake-cover-x"></div>
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                    <div class="box-snake-y"></div>
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                    <div class="box-snake-y"></div>
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                    <div class="box-snake-y"></div>
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                    <div class="box-snake-tail"></div>
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                    <div class="box-snake-x"></div>
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                    <div class="box-snake-x"></div>
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                    <div class="box-snake-x"></div>
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                    <div class="box-snake-x"></div>
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                    <div class="box-snake-x"></div>
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                    <div class="box-snake-x"></div>
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                    <div class="box-snake-x"></div>
+                </div>
+                <div class="col-game col-lg-1 box-brown relative">
+                    <div class="box-snake-border-bottom-right"></div>
+                    <div class="box-snake-cover-y"></div>
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown skull">
+                    <i class="fa-solid fa-skull-crossbones fa-shake"></i>
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+                <div class="col-game col-lg-1 box-brown">
+                </div>
+                <div class="col-game col-lg-1 box-light-brown">
+                </div>
+            </div>
+        </div>
+        <div id="start-stop" class="row around-lg">
+            <span class="btn btn-green">PLAY <i class="fa-solid fa-play"></i></span>
+            <span class="btn btn-crimson">STOP <i class="fa-solid fa-stop"></i></span>
+        </div>
+    </div>
+</body>
+</html>
